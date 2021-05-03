@@ -47,7 +47,7 @@ for a in args.area:
     s +="<query into=\"_\" type=\"area\"> <id-query type=\"area\" ref=\""+ str(3600000000 + a) +"\"/> </query> "
 
 query = """
-    <osm-script output="xml" output-config="" timeout="90000">
+    <osm-script output="xml" output-config="" timeout="10000">
     <union> """ + s + """
     </union>
     <union into="_">
